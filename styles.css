@@ -1,0 +1,297 @@
+body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.8;
+            direction: rtl;
+        }
+        header {
+            background-color: #4a4a4a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+        }
+        header img {
+            max-width: 100px; /* حجم ثابت للصور */
+            border-radius: 5%; /* شكل دائري */
+            margin-left: 10px;
+            align-items: center; /* توسيط العناصر عمودياً */
+            vertical-align: middle; /* توسيط الصورة مع النص */
+        }
+        header li {
+            width: 400px;
+        }
+        h3 {
+            font-size: 26px;
+            color: #838383;
+        }
+        nav {
+                background-color: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center; /* توسيط العناصر عمودياً */
+                padding: 20px;
+        }
+        nav a {
+            color: #ffcc00;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.4em;
+            transition: color 0.3s;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff5733;
+        }
+        #search-form {
+            display: flex;
+            align-items: center;
+            margin-left: 20px; /* إضافة مسافة بين النموذج والروابط */
+            font-family: 'Cairo', sans-serif;  
+            font-weight: bold;   
+        }
+        #search-input {
+            padding: 10px 45px;
+            border: 1px solid #ffcc00;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+            font-family: 'Cairo', sans-serif;  
+            font-weight: bold;   
+        }
+        #search-input:focus {
+            border-color: #ff5733; /* تغيير لون الحدود عند التركيز */
+            outline: none; /* إزالة الحدود الافتراضية */
+            font-family: 'Cairo', sans-serif;  
+            font-weight: bold;   
+        }
+        #search-form button {
+            padding: 10px 6px;
+            text-align: center;
+            border: none;
+            background-color: #ffcc00;
+            color: #333;
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; /* إضافة تأثير الزر */
+            font-family: 'Cairo', sans-serif;  
+            font-weight: bold;   
+        }
+        #search-form button:hover {
+            background-color: #ff5733; /* تغيير لون الزر عند التمرير */
+            transform: scale(1.05); /* زيادة حجم الزر قليلاً */
+            font-family: 'Cairo', sans-serif;  
+            font-weight: bold;   
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+        .section-title {
+            background-color: #ffcc00;
+            color: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 30px 0;
+            font-size: 2.5em;
+            text-align: center; /* توسيط العنوان */
+        }
+        .story, .character, .battle-details, .hashira-details, .era-details {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s;
+        }
+        /* تأثيرات الظهور */
+        .battle-list, .character-list, .hashira-list, .era-list {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .code-container {
+            background-color: #d9dfda;
+            color: #169bcf;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            overflow-x: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            direction: ltr;
+            text-align: left;
+        }
+        
+        .code-container code {
+            color: #169bcf;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .copy-btn , .copy-btn2 , .copy-btn3 , .copy-btn4 , .copy-btn5  {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 7px 15px;
+            background-color: #f6faf6;
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 0px;
+            cursor: pointer;
+            font-size: 14px;
+            font-family: 'Cairo', sans-serif;
+        }
+        
+        .copy-btn:hover,.copy-btn2:hover,.copy-btn3:hover,.copy-btn4:hover,.copy-btn5:hover {
+            background-color: #6e6e6e;
+            color: #ffffff;
+        }
+        .battle-list, .character-list, .hashira-list, .era-list {
+            margin: 20px 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        .battle-item, .character-item, .hashira-item {
+            background: #e0e0e0;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.5s;
+        }
+
+        footer {
+            background-color: #4a4a4a;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* إضافة صور للشخصيات */
+        .character-item img {
+            max-width: 200px; /* حجم ثابت للصور */
+            border-radius: 5%; /* شكل دائري */
+            margin-left: 10px;
+            align-items: center; /* توسيط العناصر عمودياً */
+            vertical-align: middle; /* توسيط الصورة مع النص */
+        }
+        .hashira-item img {
+            max-width: 470px; /* حجم ثابت للصور */
+            border-radius: 3%; /* شكل دائري */
+            margin-left: 10px;
+            align-items: center; /* توسيط العناصر عمودياً */
+            vertical-align: middle; /* توسيط الصورة مع النص */
+            border-color: #ff5733;
+            border-width: 10px;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        .space {
+            padding: 10px;
+        }
+        .reset-button {
+            background-color: #ffcc00;
+            border: none;
+            color: #333;
+            padding: 8px 2px;
+            margin: in-left 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-family: 'Cairo', sans-serif;  
+            font-weight: bold;          
+        }
+        .reset-button:hover {
+            background-color: #ff5733; /* تغيير لون الزر عند التمرير */
+            transform: scale(1.05); /* زيادة حجم الزر قليلاً */
+        }
+        .titre {
+            color: #ff5733;
+        }
+        .me-item {
+            font-size: 27px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .me-title {
+            text-align: center;
+            color: #ffcc00;
+        }
+        .footer {
+            text-align: center;
+            font-weight: 600;
+        }
+        .kit-arduino-item {
+            position: relative;
+            padding: 15px;
+            margin: 15px 0;
+            list-style-type: none;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        .kit-arduino-item img {
+            float: right;
+            width: 100px;
+            height: auto;
+            margin-left: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .kit-arduino-item h3 {
+            font-family: 'Cairo', sans-serif;
+            font-size: 1.3em;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        #search-form img {
+            width: 34px;
+        }
+        
+        .kit-arduino-item p {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+        }
+        .highlight {
+            background-color: yellow; /* لون خلفية للإبراز */
+            color: black; /* لون النص */
+        }
+        
+        @media screen and (max-width: 768px) {
+            .kit-arduino-item img {
+                float: none;
+                margin: 0 auto 15px;
+                display: block;
+            }
+        }
+        

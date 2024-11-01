@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/icon-web-site.png" type="image/x-icon">
+    <title>Arduinokids</title>
+    <link href="font/Cairo-SemiBold.ttf" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Arduinokids</h1>
+</header>
+
+<nav dir="ltr">
+    
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="search...." />
+        <button type="submit"><img src="icon/serch.png" alt=""></button>
+        <button type="button" class="reset-button" id="reset-button"><img src="icon/relod.png" alt=""></button>
+    </form>
+    <a href="#about_me">من أنـا</a>
+    <a href="#eras">قطع مجموعة الأردوينو</a>
+    <a href="#battles">بـعض الأكواد الأساسية</a>
+    <a href="#hashira">مجـالات الأردوينو</a>
+    <a href="#characters">أنــواع الأردوينو</a>
+    <a href="#story">ماهي الأردوينو</a>
+
+
+
+
+
+    
+</nav>
+
+<div class="container" id="story">
+    <h2 class="section-title">مـاهي الأردويـنو</h2>
+    <div class="story">
+        <p>
+            الأردوينو هو منصة إلكترونية مفتوحة المصدر تتكون من جهاز لوحة تطوير صغيرة ومجموعة من البرمجيات (IDE) المصممة لتسهيل البرمجة والتحكم في الإلكترونيات. تأسست الأردوينو في 2005 من قبل مجموعة من الباحثين الإيطاليين بقيادة ماسيمو بانزي، وكان الهدف الأساسي منها هو توفير وسيلة بسيطة ومرنة للمصممين والفنانين والطلاب والهواة لبناء مشاريع إلكترونية بدون الحاجة إلى خلفية واسعة في الإلكترونيات.
+        </p>
+        <p>
+            <h3 class="titre">شعبية الأردينو</h3>
+            الأردوينو حقق شعبية كبيرة بفضل تصميمه السهل والمتاح، وكونه مفتوح المصدر، مما يعني أن أي شخص يمكنه تطوير وتحسين المنصة. إن توفر الكثير من الوثائق التعليمية، وأمثلة المشاريع، ومجتمع واسع من المستخدمين، يجعل الأردوينو الخيار الأول للعديد من المبتدئين والمحترفين على حد سواء في مجال الإلكترونيات.
+        </p>
+        <p>
+            يستخدم الأردينو في مجالات عدة وله أنواع متعددة تختلف حسب استخداماتها
+        </p>
+    </div>
+</div>
+
+<div class="container" id="characters">
+    <h2 class="section-title">أنــواع الأرديــنو</h2>
+    <ul class="character-list">
+        <li class="character-item">
+            <h3>Arduino UNO</h3>
+            <img src="Arduino/Arduino UNO.png" alt="تانجيرو كامادو"><img src="Arduino/arduino UNO2.png" alt=""><img src="Arduino/Arduino Uno3.png" alt="">
+            <p>أكثر الأنواع شيوعاً، يعتمد على متحكم ATmega328، ويستخدم غالبًا في المشاريع المبتدئة والمتوسطة.</p>
+        </li>
+        <li class="character-item">
+            <h3>Arduino Mega</h3>
+            <img src="Arduino/Mega1.png" alt="تانجيرو كامادو"><img src="Arduino/Mega2.png" alt="">
+            <p>يتميز بقدرات أكبر وعدد دبابيس أكثر، ويستخدم في المشاريع التي تتطلب تفاعلات مع عدد كبير من المدخلات والمخرجات، مثل الروبوتات.</p>
+        </li>
+        <li class="character-item">
+            <h3>Arduino Nano</h3>
+            <img src="Arduino/Nano1.png" alt="تانجيرو كامادو"><img src="Arduino/Nano2.png" alt=""><img src="Arduino/Nano3.png" alt="">
+            <p>صغير الحجم ويعتمد على نفس المتحكم في الأردوينو أونو، يستخدم بشكل أساسي في المشاريع التي تتطلب الحجم الصغير.</p>
+        </li>
+        <li class="character-item">
+            <h3>Arduino Leonardo</h3>
+            <img src="Arduino/Leonardo1.png" alt="تانجيرو كامادو"><img src="Arduino/Leonardo.png" alt=""><img src="Arduino/Leonardo2.png" alt=""><img src="Arduino/Leonardo3.png" alt="">
+            <p>يحتوي على متحكم ATmega32u4 الذي يمكنه التفاعل مع الكمبيوتر كأداة إدخال مباشرة، مما يسمح بإنشاء أجهزة مثل لوحات المفاتيح المخصصة أو الفأرات المخصصة.</p>
+        </li>
+        <li class="character-item">
+            <h3>Arduino MKR Series</h3>
+            <img src="Arduino/MKR1.png" alt="تانجيرو كامادو"><img src="Arduino/MKR2.png" alt=""><img src="Arduino/MKR3.png" alt="">
+            <p>سلسلة متخصصة تضم خيارات اتصال مثل الواي فاي والبلوتوث والاتصال الخلوي، مما يجعلها مناسبة لإنترنت الأشياء (IoT).
+            </p>
+        </li>
+    </ul>
+</div>
+
+<div class="container" id="hashira">
+    <h2 class="section-title">مجـــالات استخـدام الأردويـنو</h2>
+    <ul class="hashira-list">
+        <li class="hashira-item">
+            <h3>التعليم</h3>
+            <p>الأردوينو هو أداة تعليمية شائعة يستخدمها الطلاب والمدرسون في المدارس والجامعات لفهم المبادئ الأساسية في الإلكترونيات والبرمجة.</p>
+            <img src="Arduino مـــــجـالات/edca/edca1.jpg" alt=""><img src="Arduino مـــــجـالات/edca/edca2.jpg" alt="">
+            <ul class="space"></ul>
+            <img src="Arduino مـــــجـالات/edca/edca4.jpg" alt=""><img src="Arduino مـــــجـالات/edca/edca5.jpg" alt="">
+        </li>
+        <li class="hashira-item">
+            <h3>الروبوتات</h3>
+            <p>يستخدم في العديد من المشاريع الروبوتية، مثل روبوتات تتبع الخطوط، والروبوتات المتحركة، والروبوتات التي تتفاعل مع البيئة.</p>
+
+            <img src="Arduino مـــــجـالات/Robot/robo1.jpg" alt=""><img src="Arduino مـــــجـالات/Robot/robo2.jpg" alt="">
+            <ul class="space"></ul>
+            <img src="Arduino مـــــجـالات/Robot/robo3.jpg" alt=""><img src="Arduino مـــــجـالات/Robot/robo4.jpg" alt="">
+        </li>
+        <li class="hashira-item">
+            <h3>أنترنت الأشياء (Lot)</h3>
+            <p>يُستخدم في بناء مشاريع ذكية متصلة بالشبكة، مثل المنازل الذكية، أنظمة الري الآلية، ومستشعرات البيئات الذكية.</p>
+
+            <img src="Arduino مـــــجـالات/Lot/lot1.jpg" alt=""><img src="Arduino مـــــجـالات/Lot/lot2.png" alt="">
+            <ul class="space"></ul>
+            <img src="Arduino مـــــجـالات/Lot/lot3.jpg" alt=""><img src="Arduino مـــــجـالات/Lot/lot4.jpg" alt="">
+        </li>
+        <li class="hashira-item">
+            <h3>الفن التفاعلي</h3>
+            <p>يستخدم الأردوينو بشكل شائع من قبل الفنانين لخلق تجارب تفاعلية، حيث يمكنهم برمجته للاستجابة إلى أصوات، حركات، أو لمسات.</p>
+
+            <img src="Arduino مـــــجـالات/aut/aut1.jpg" alt=""><img src="Arduino مـــــجـالات/aut/aut2.jpg" alt="">
+            <ul class="space"></ul>
+            <img src="Arduino مـــــجـالات/aut/aut3.jpg" alt=""><img src="Arduino مـــــجـالات/aut/aut4.jpg" alt="">
+        </li>
+        <li class="hashira-item">
+            <h3>التحكم في الأجهزة</h3>
+            <p>يمكن استخدام الأردوينو للتحكم في تشغيل وإطفاء الأجهزة الكهربائية والإلكترونية مثل الأضواء، المحركات، وأنظمة التبريد والتدفئة.</p>
+
+            <img src="Arduino مـــــجـالات/click/remot1.jpg" alt=""><img src="Arduino مـــــجـالات/click/remot2.jpg" alt="">
+            <ul class="space"></ul>
+            <img src="Arduino مـــــجـالات/click/remot3.png" alt=""><img src="Arduino مـــــجـالات/click/remot4.jpg" alt="">
+        </li>
+    </ul>
+</div>
+
+<div class="container" id="battles">
+    <h2 class="section-title">بعض الأكواد الأساسية في الأردويـنو</h2>
+    <ul class="battle-list">
+        <li class="battle-item">
+            <h3>كود تشغيل وإطفاء LED باستخدام زر</h3>
+            <div class="battle-details">
+                <p><strong>
+                    هذا الكود يقوم بتشغيل وإطفاء LED باستخدام زر. عند الضغط على الزر، يضيء LED، وعند الضغط مرة أخرى ينطفئ.
+                </strong></p>
+                <div class="code-container">
+                    <button class="copy-btn" onclick="copyCode1()">Copy code</button>
+
+                    <pre><code id="code-block">
+                        int ledPin = 13;  // تحديد دبوس الـ LED
+                        int buttonPin = 2; // تحديد دبوس الزر
+                        int buttonState = 0;  // حالة الزر
+                        
+                        void setup() {
+                          pinMode(ledPin, OUTPUT);    // تعيين دبوس LED كخرج
+                          pinMode(buttonPin, INPUT);   // تعيين دبوس الزر كمدخل
+                        }
+                        
+                        void loop() {
+                          buttonState = digitalRead(buttonPin); // قراءة حالة الزر
+                        
+                          if (buttonState == HIGH) {   // إذا كان الزر مضغوطًا
+                            digitalWrite(ledPin, HIGH);  // تشغيل LED
+                          } else {
+                            digitalWrite(ledPin, LOW);   // إطفاء LED
+                          }
+                        }
+                    </code></pre>
+                </div>
+                <p><strong>الشرح  :</strong>هذا البرنامج يقرأ حالة الزر. عندما يكون الزر في حالة ضغط، يتم تشغيل الـ LED، وعندما يتم تحرير الزر، يتم إطفاؤه.
+                </p>
+            </div>
+        </li>
+        <li class="battle-item">
+            <h3>كود قياس درجة الحرارة باستخدام مستشعر حرارة</h3>
+            <div class="battle-details">
+                <p><strong>
+                    هذا الكود يستخدم مستشعر الحرارة LM35 لقياس درجة الحرارة وعرضها على الشاشة التسلسلية.
+                </strong>
+                </p>
+                <div class="code-container">
+                    <button class="copy-btn2" onclick="copyCode2()">Copy code</button>
+                    <pre><code id="code-block2">
+                        int tempPin = A0; // دبوس مستشعر الحرارة
+
+                        void setup() {
+                          Serial.begin(9600);  // بدء الاتصال التسلسلي
+                        }
+                        
+                        void loop() {
+                          int reading = analogRead(tempPin); // قراءة قيمة المستشعر
+                          float voltage = reading * (5.0 / 1023.0);  // تحويل القراءة إلى فولت
+                          float temperatureC = voltage * 100;  // حساب درجة الحرارة
+                        
+                          Serial.print("Temperature: ");
+                          Serial.print(temperatureC); 
+                          Serial.println(" C");
+                        
+                          delay(1000);  // تأخير لمدة ثانية
+                        }
+                    </code></pre>
+                </div>
+                <p><strong>الشرح  :</strong>هنا، يقوم الكود بقراءة درجة الحرارة من مستشعر LM35 كل ثانية، ويحولها إلى درجة مئوية، ثم يعرضها على الشاشة التسلسلية.
+                </p>
+            </div>
+        </li>
+        <li class="battle-item">
+            <h3>كود تشغيل محرك Servo بزاوية محددة</h3>
+            <div class="battle-details">
+                <p><strong>
+                    هذا الكود يتحكم في محرك Servo لجعله يتحرك إلى زاوية معينة.
+                </strong>
+                </p>
+                <div class="code-container">
+                    <button class="copy-btn3" onclick="copyCode3()">Copy code</button>
+                    <pre><code id="code-block3">
+                        #include <Servo.h>
+
+                            Servo myservo;  // إنشاء كائن servo
+                            int pos = 0;    // موقع السيرفو بالدرجة
+                            
+                            void setup() {
+                              myservo.attach(9);  // ربط السيرفو بالدبوس 9
+                            }
+                            
+                            void loop() {
+                              for (pos = 0; pos <= 180; pos += 1) { // التحرك من 0 إلى 180 درجة
+                                myservo.write(pos);                
+                                delay(15);                       
+                              }
+                              for (pos = 180; pos >= 0; pos -= 1) { // التحرك من 180 إلى 0 درجة
+                                myservo.write(pos);              
+                                delay(15);                       
+                              }
+                            }
+                            
+                    </code></pre>
+                </div>
+                <p><strong>الشرح  :</strong>يتحرك هذا الكود بمحرك السيرفو من زاوية 0 إلى 180 درجة ببطء، ثم يعيده إلى زاوية 0، ويكرر هذه العملية بشكل مستمر.
+                </p>
+
+            </div>
+        </li>
+        <li class="battle-item">
+            <h3>كود التحكم في LED باستخدام مستشعر ضوء</h3>
+            <div class="battle-details">
+                <p><strong>
+                    يتم تشغيل وإطفاء LED اعتمادًا على شدة الضوء المقاسة بمستشعر ضوء LDR (مقاومة ضوئية).
+                </strong>
+                </p>
+                <div class="code-container">
+                    <button class="copy-btn4" onclick="copyCode4()">Copy code</button>
+                    <pre><code id="code-block4">
+                        int ledPin = 13;  // دبوس الـ LED
+                        int ldrPin = A0;  // دبوس المستشعر الضوئي
+                        int threshold = 500; // عتبة الضوء لتشغيل LED
+                        
+                        void setup() {
+                          pinMode(ledPin, OUTPUT);
+                          Serial.begin(9600);  
+                        }
+                        
+                        void loop() {
+                          int lightLevel = analogRead(ldrPin); // قراءة مستوى الضوء
+                          Serial.println(lightLevel); 
+                        
+                          if (lightLevel < threshold) {
+                            digitalWrite(ledPin, HIGH);  // تشغيل LED إذا كان الضوء منخفضًا
+                          } else {
+                            digitalWrite(ledPin, LOW);   // إطفاء LED إذا كان الضوء عاليًا
+                          }
+                          
+                          delay(500); // تأخير نصف ثانية
+                        }
+                        
+                    </code></pre>
+                </div>
+                <p><strong>الشرح  :</strong>يقرأ هذا الكود مستوى الضوء من المستشعر الضوئي، ويقوم بتشغيل LED إذا كانت شدة الضوء منخفضة، وإطفائه إذا كانت شدة الضوء مرتفعة.
+                </p>
+
+            </div>
+        </li>
+        <li class="battle-item">
+            <h3>كود إرسال بيانات عبر البلوتوث</h3>
+            <div class="battle-details">
+                <p><strong>
+                    يمكن استخدام هذا الكود لإرسال بيانات عبر البلوتوث باستخدام وحدة HC-05 أو HC-06.
+                </strong>
+                </p>
+                <div class="code-container">
+                    <button class="copy-btn5" onclick="copyCode5()">Copy code</button>
+                    <pre><code id="code-block5">
+                        #include <SoftwareSerial.h>
+
+                            SoftwareSerial BT(10, 11); // تعيين دبابيس RX وTX للبلوتوث
+                            
+                            void setup() {
+                              Serial.begin(9600);      // بدء الاتصال التسلسلي
+                              BT.begin(9600);          // بدء اتصال البلوتوث
+                            }
+                            
+                            void loop() {
+                              if (BT.available()) {     // إذا كانت هناك بيانات قادمة من البلوتوث
+                                char data = BT.read();  // قراءة البيانات
+                                Serial.print("Received: ");
+                                Serial.println(data);    // عرض البيانات المستقبلة على الشاشة
+                              }
+                            
+                              if (Serial.available()) {  // إذا كانت هناك بيانات قادمة من التسلسلي
+                                char data = Serial.read(); 
+                                BT.write(data);         // إرسال البيانات عبر البلوتوث
+                              }
+                            }
+                            
+                    </code></pre>
+                </div>
+                <p><strong>الشرح  :</strong>يقوم هذا البرنامج بقراءة البيانات من البلوتوث وعرضها على الشاشة التسلسلية، وكذلك إرسال البيانات من التسلسلي إلى البلوتوث، مما يتيح الاتصال بين الأردوينو وجهاز البلوتوث المتصل.
+                </p>
+
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="container" id="eras">
+    <h2 class="section-title">القطع الأكثــر شيـوعا في مجموعة
+        <strong>Arduino starter kit</strong>
+    </h2>
+    <ul class="era-list">
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>لوحة Arduino UNO</h3>
+            <img src="arduino starter kit/arduino uno.png" alt="">
+            <p><strong>الوصف:</strong> تعتبر لوحة التحكم الأساسية في المجموعة، تعمل كمتحكم رئيسي لبقية القطع.</p>
+            <p><strong>الوظيفة:</strong> يتم برمجتها لتنفيذ أوامر محددة، والتفاعل مع مختلف القطع المتصلة بها، وتتحكم في تدفق البيانات.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>مقاومات كهربائية (Resistors)</h3>
+            <img src="arduino starter kit/Resistors.jpg" alt="">
+            <p><strong>الوصف:</strong> قطع صغيرة تحد من تدفق التيار الكهربائي، ويتم تمييز قيمها بألوان عليها.</p>
+            <p><strong>الوظيفة:</strong> تساعد على حماية القطع الأخرى مثل الـ LED من التلف، وتضمن أن الكمية المناسبة من التيار تصل للدوائر المختلفة.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>LEDs (الثنائيات الضوئية)</h3>
+            <img src="arduino starter kit/Leds.jpg" alt="">
+            <p><strong>الوصف:</strong> وحدات ضوئية صغيرة تعمل عند مرور التيار الكهربائي.</p>
+            <p><strong>الوظيفة:</strong> تُستخدم كإشارات ضوئية، وغالبًا ما توضع في المشاريع كإشارة لإضاءة أو إشعار مرئي.</p>
+            </div>
+        </li>
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>الأسلاك (Jumper Wires)</h3>
+            <img src="arduino starter kit/jumper_wires.jpg" alt="Jumper Wires" style="float:right; width:100px; margin: 10px;">
+            <p><strong>الوصف:</strong> أسلاك صغيرة تُستخدم لربط مكونات الدائرة على لوحة التجارب بدون لحام.</p>
+            <p><strong>الوظيفة:</strong> تُستخدم لتمرير الإشارات والطاقة بين مكونات الدائرة، مثل توصيل المستشعرات، والمحركات، والمكونات الإلكترونية الأخرى بلوحة الأردوينو.</p>
+            </div>
+        </li>
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>زر الضغط (Push Button)</h3>
+            <img src="arduino starter kit/Push Button.jpg" alt="">
+            <p><strong>الوصف:</strong> زر بسيط يولد اتصالًا أو يقطعه عند الضغط عليه.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم كمفتاح تشغيل أو تعطيل في الدوائر، حيث يسمح بالتحكم اليدوي بالدوائر الإلكترونية.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>مقاومة متغيرة (Potentiometer)</h3>
+            <img src="arduino starter kit/Potentiometer.jpg" alt="">
+            <p><strong>الوصف:</strong> مقاومة ذات قيمة متغيرة يمكن تعديلها باستخدام مقبض أو قرص.</p>
+            <p><strong>الوظيفة:</strong> تُستخدم للتحكم في شدة الإشارة أو التيار، مثل التحكم في شدة الضوء أو الصوت.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>حساس درجة الحرارة (Temperature Sensor)</h3>
+            <img src="arduino starter kit/Temperature Sensor.jpg" alt="">
+            <p><strong>الوصف:</strong> حساس يقيس درجة الحرارة المحيطة ويحوّلها إلى قيمة كهربائية.</p>
+            <p><strong>الوظيفة:</strong> يستخدم لقراءة درجة الحرارة، ويُستخدم في مشاريع قياس والتحكم بالبيئة.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>حساس الضوء (Photoresistor)</h3>
+            <img src="arduino starter kit/Photoresistor.png" alt="">
+            <p><strong>الوصف:</strong> مقاومة تتغير قيمتها حسب كمية الضوء الساقط عليها.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم لاستشعار شدة الإضاءة، مثل إطفاء الأنوار تلقائيًا في النهار وتشغيلها في الليل.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>محرك السيرفو (Servo Motor)</h3>
+            <img src="arduino starter kit/Servo Motor.jpg" alt="">
+            <p><strong>الوصف:</strong> محرك صغير يعمل على تحديد زوايا معينة بدقة.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم في مشاريع تتطلب التحكم في زاوية محددة، مثل التحكم في الأبواب، أو الروبوتات.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>محرك كهربائي (DC Motor)</h3>
+            <img src="arduino starter kit/DC Motor.jpg" alt="">
+            <p><strong>الوصف:</strong> محرك بسيط يعمل بالتيار المستمر.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم لتحريك الأشياء، ويعتبر أساسيًا في بناء الروبوتات البسيطة.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>شاشة عرض (LCD)</h3>
+            <img src="arduino starter kit/LCD.jpg" alt="">
+            <p><strong>الوصف:</strong> شاشة صغيرة تعرض النصوص والبيانات.</p>
+            <p><strong>الوظيفة:</strong> تُستخدم لعرض الرسائل أو المعلومات، مثل درجة الحرارة أو البيانات المستقبلة من الحساسات.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>مقاومات حرارية (Thermistor)</h3>
+            <img src="arduino starter kit/Thermistor.jpg" alt="">
+            <p><strong>الوصف:</strong> نوع من المقاومات تتغير قيمتها حسب درجة الحرارة.</p>
+            <p><strong>الوظيفة:</strong> تُستخدم في قياس التغير في درجة الحرارة، مثل حساسات الحرارة في التبريد والتدفئة.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>لوحة تجارب (Breadboard)</h3>
+            <img src="arduino starter kit/Breadboard.jpg" alt="">
+            <p><strong>الوصف:</strong> لوحة مؤقتة لتجميع وتوصيل الدوائر دون الحاجة إلى لحام.</p>
+            <p><strong>الوظيفة:</strong> تتيح لك تجربة توصيلات الدوائر وتركيب القطع بسهولة وسرعة قبل تثبيتها نهائيًا.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>متحسس الحركة (PIR Sensor)</h3>
+            <img src="arduino starter kit/PIR Sensor.jpg" alt="">
+            <p><strong>الوصف:</strong> حساس يستشعر الأشعة تحت الحمراء للكائنات.</p>
+            <p><strong>الوظيفة:</strong> يستخدم لاستشعار الحركة، ويُستخدم غالبًا في أنظمة الأمان والتحكم التلقائي.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>حساس الرطوبة والحرارة (DHT11)</h3>
+            <img src="arduino starter kit/DHT11.jpg" alt="">
+            <p><strong>الوصف:</strong> حساس يقيس كل من الرطوبة ودرجة الحرارة.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم في المشاريع البيئية، حيث يعطي بيانات عن درجة الحرارة ونسبة الرطوبة في المكان.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>مستشعر الصوت (Sound Sensor)</h3>
+            <img src="arduino starter kit/Sound Sensor.jpg" alt="">
+            <p><strong>الوصف:</strong> حساس يستجيب للأصوات حوله.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم لالتقاط الأصوات أو قياس شدتها، مثل استشعار الصوت في المشاريع التفاعلية.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>وحدة البلوتوث (Bluetooth Module)</h3>
+            <img src="arduino starter kit/Bluetooth Module.jpg" alt="">
+            <p><strong>الوصف:</strong> وحدة لاسلكية للتواصل مع الأجهزة الأخرى عبر البلوتوث.</p>
+            <p><strong>الوظيفة:</strong> تُستخدم في التحكم عن بُعد بالأجهزة، مثل التحكم بالروبوتات أو جمع البيانات بشكل لاسلكي.</p>
+            </div>
+        </li>
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>مخرج الصوت (Buzzer)</h3>
+            <img src="arduino starter kit/buzzer.jpg" alt="Buzzer" style="float:right; width:100px; margin: 10px;">
+            <p><strong>الوصف:</strong> جهاز صغير يصدر أصواتًا عند تمرير تيار كهربائي خلاله.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم لإصدار التنبيهات الصوتية في المشاريع.</p>
+            </div>
+        </li>
+        
+        <li class="kit-arduino-item">
+            <div class="era-details">
+            <h3>مقياس الرطوبة (Humidity Sensor)</h3>
+            <img src="arduino starter kit/Humidity Sensor.jpg" alt="Humidity Sensor" style="float:right; width:100px; margin: 10px;">
+            <p><strong>الوصف:</strong> حساس يقيس مستوى الرطوبة في البيئة المحيطة.</p>
+            <p><strong>الوظيفة:</strong> يُستخدم في مراقبة مستوى الرطوبة، ويعتبر مفيدًا في تطبيقات المناخ والزراعة.</p>
+            </div>
+        </li>
+    
+        </div>
+    </ul>
+    
+</div>
+
+
+<div class="container" id="about_me">
+    <h2 class="section-title">من أنا</h2>
+    <div class="about_me">
+        <p class="me-item">
+            مرحبا، أنا سحوان عبدالقادر ،أنا طفل أبلغ من العمر 12 سنة وأجيد مجالات مختلفة من البرمجة، كبرمجة المواقع الإلكترونية وبرمجة الألعاب والبرمجة باستخدام لغة بايثون وأجيد أيضا برمجة وصنع الروبوتات باستخدام الأردوينو.
+        </p>
+        <h3 class="me-title">مشاريعي ومنجزاتي</h3>
+        <p class="me-item">
+            حققتُ عدة مشاريع وإنجازات، منها مواقع الكترونية مختلفة وألعاب ثنائية الأبعاد بسيطة ومشاريع بايثون.
+        </p>
+        <p class="me-item">
+            أنا الآن أحاول أن أطور من مهارتي البرمجية في مجالات مختلفة، كتطوير التطبيقات والبحث عن ثغرات المواقع.
+        </p>
+    </div>
+</div>
+
+<footer>
+    <p>© 2024 سحوان عبدالقادر. جميع الحقوق محفوظة.</p>
+    <p>تم إنشاء هذا الموقع في أكتوبر 2024.</p>
+</footer>
+
+
+<script src="script1.js"></script>
+</body>
+</html>
